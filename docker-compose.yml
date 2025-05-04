@@ -2,6 +2,8 @@ version: "3.8"
 
 services:
   frontend:
+    dns:
+      - 8.8.8.8
     build:
       context: ./frontend
       dockerfile: Dockerfile
@@ -16,6 +18,8 @@ services:
       - backend
 
   backend:
+    dns:
+      - 8.8.8.8
     build:
       context: ./backend
       dockerfile: Dockerfile
