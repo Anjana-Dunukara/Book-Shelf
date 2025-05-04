@@ -39,7 +39,6 @@ A full-stack application for managing your personal book collection, featuring a
 - Error handling
 - Loading states
 - Toast notifications
-- Dark mode support
 - Comprehensive test coverage
 
 ## Getting Started
@@ -57,7 +56,7 @@ A full-stack application for managing your personal book collection, featuring a
 
 ```bash
 git clone <repository-url>
-cd book-management-app
+cd book-shelf
 ```
 
 2. Set up environment variables
@@ -139,6 +138,11 @@ The application will be available at:
 ## ⚠️ Known Issue: Docker Build Fails Due to Network Timeout
 
 Sometimes, the Docker build may fail during the frontend image build due to network issues — especially while trying to fetch base images or install packages. The error message may look like:
+
+```bash
+failed to solve: DeadlineExceeded: failed to resolve source metadata for docker.io/library/node:alpine
+failed to fetch oauth token: Post "https://auth.docker.io/token": i/o timeout
+```
 
 ### ✅ Solution
 
